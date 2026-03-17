@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            line-height: 1.6;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 900px;
+            background-color: rgb(245, 222, 76)
+            }
+        h1{
+            font-size: 10.5mm;
+        }
+        h2{
+            font-size: 8.75mm;
+        }
+        li, dd, legend{
+            font-size: 5.6mm;
+        }
+        div, dt{
+            font-size: 6.3mm;
+        }
+        form{
+            padding: 0px 150px 0px;
+            font-size: 5.6mm;
+        }
+        #form, fieldset, button{
+            text-align: center;
+        }
+        button{
+            margin-left: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FQA</h1>
+    <section>
+        <nav aria-labelledby="faq-navigation-title">
+            <h2 id="faq-navigation-title">Навігація по FAQ</h2>
+            <ul>
+                <li><a href="#q1">З чого складаються яйця?</a></li>
+                <li><a href="#q2">Які яйця вживають в їжу?</a></li>
+                <li><a href="#q3">Які яйця любить авторка?</a></li>
+                <li><a href="#q4">Чому у статті немає інформації про шкоду яєць?</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <div role="search">
+            <label for="faq-search"><b>Пошук по FAQ:</b></label>
+            <input type="search" id="faq-search" name="q" placeholder="Введіть ключове слово...">
+        </div>
+    </section>
+    <section>
+    <dl>
+        <dt id="q1"><b>З чого складаються яйця?</b></dt>
+        <dd>Яйця складаються з жовтка та білка</dd>
+        <dt id="q2"><b>Які яйця вживають в їжу?</b></dt>
+        <dd>В їжу вживають курячі, качині, гусячі, індичі, перепелині та яйця інших птахів</dd>
+        <dt id="q3"><b>Які яйця любить авторка?</b></dt>
+        <dd>Авторка любить варені та смажені курячі яйця</dd>
+        <dt id="q4"><b>Чому у статті немає інформації про шкоду яєць?</b></dt>
+        <dd>Мета статті виділити переваги яєць</dd>
+    </dl>
+    </section>
+    
+</body>
+<footer>
+    <section id="contact-form-section">
+                <h2 id="form">Задайте своє питання</h2>
+                <form action="/submit" method="POST">
+                    <fieldset>
+                        <legend><b>Контактна інформація</b></legend>
+
+                        <label for="name">Ім'я:</label>
+                        <input type="text" id="name" name="name" required />
+        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                    </fieldset>
+    
+                    <button type="submit">Відправити</button>
+                </form>
+    </section>
+</footer>
+</html>
